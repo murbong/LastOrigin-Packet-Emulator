@@ -12,7 +12,6 @@
         public ushort BeforeHP { get; set; }
         public ushort AfterHP { get; set; }
 
-        // Token: 0x06003D98 RID: 15768 RVA: 0x0012659C File Offset: 0x0012499C
         public void Read(TCPBinaryReader br)
         {
             if (br == null) return;
