@@ -33,8 +33,8 @@ namespace Pcap.Object
         public List<CharEnchantInfo> CharEnchantInfoList { get; set; }
         public CharMaxEnchant CharMaxEnchantInfo { get; set; }
         public byte IsFirstChar { get; set; }
-        public byte IsUseCoreslotRef { get; set; }
-        public byte IsLock { get; set; }
+        public byte IsUseCores { get; set; }
+        public byte IsLocked { get; set; }
         public uint FavorPoint { get; set; }
         public ulong LastGiveFavorPointTime { get; set; }
         public string SkinName { get; set; }
@@ -69,8 +69,8 @@ namespace Pcap.Object
             CharEnchantInfoList = br.ReadList<CharEnchantInfo>();
             CharMaxEnchantInfo = br.ReadObj<CharMaxEnchant>();
             IsFirstChar = br.ReadByte();
-            IsUseCoreslotRef = br.ReadByte();
-            IsLock = br.ReadByte();
+            IsUseCores = br.ReadByte();
+            IsLocked = br.ReadByte();
             FavorPoint = br.ReadUInt32();
             LastGiveFavorPointTime = br.ReadUInt64();
             SkinName = br.ReadString();
