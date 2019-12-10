@@ -9,22 +9,16 @@ namespace Pcap
     /// Basic capture example
     /// </summary>
     /// 
-
+    
     public static class Program
     {
         public static void Main(string[] args)
         {
-
-            
-
             Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
             Console.SetBufferSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
             Console.Title = "라스트오리진 통발 블랙박스";
             Console.CursorSize = 11;
             Translate.SetDictionary(Environment.CurrentDirectory+@"\trans.txt");
-
-
-
             ProcessStartInfo psi = new ProcessStartInfo("cmd.exe")
             {
                 RedirectStandardError = true,

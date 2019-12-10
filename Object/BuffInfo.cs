@@ -10,7 +10,7 @@
         public string FromString { get; set; }
         public ushort AttrType { get; set; }
         public byte AttrValueType { get; set; }
-        public float AttrValue { get; set; }
+        public float AttrValue { get; set; }//퍼센트값
         public byte BuffIndex { get; set; }
         public byte _ { get; set; }
         public CharInfo CharInfo { get; set; }
@@ -26,7 +26,7 @@
             AttrValueType = br.ReadByte();
             AttrValue = br.ReadSingle();
             BuffIndex = br.ReadByte();
-            _ = br.ReadByte();//나도몰라
+            _ = br.ReadByte();
             CharInfo = br.ReadObj<CharInfo>();
         }
     }

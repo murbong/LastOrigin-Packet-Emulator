@@ -19,7 +19,7 @@ namespace Pcap.Object
             TargetGridList = br.ReadIntList();
             AttackerSkillString = br.ReadString();
             IsCri = br.ReadByte();
-            SpecialSkillList = br.ReadList<SpecialSkillInfo>();
+            SpecialSkillList = br.ReadList<SpecialSkillInfo>(); 
         }
     }
 
